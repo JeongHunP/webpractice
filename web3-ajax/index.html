@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <h1><a href="index.html">WEB</a></h1>
+    <h1><a href="#!welcome">WEB</a></h1>
     <input type="button" value="day" onclick="
       nightdayHandler(this);
     ">
@@ -43,7 +43,6 @@
             var item = items[i];
             var tag = '<li><a href="#!'+item+'" onclick="fetchpage(\''+item+'\');">'+item+'</a></li>';
             tags = tags + tag;
-            console.log(tags);
             i = i+1;
           }
           document.querySelector('#nav').innerHTML = tags;
