@@ -37,6 +37,7 @@
             var item = items[i];
             var tag = '<li><a href="#!'+item+'" onclick="fetchpage(\''+item+'\');">'+item+'</a></li>';
             tags = tags + tag;
+            console.log(tags);
             i = i+1;
           }
           document.querySelector('#nav').innerHTML = tags;
