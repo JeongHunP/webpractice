@@ -1,0 +1,81 @@
+html{
+  height:100%;
+}
+
+body{
+  height: 100%;
+  background: #f5f6f7;
+  margin: 0px;
+  font-family: Dotum, '돋움', Helvetica, sans-serif;
+}
+
+#header{
+  padding-top: 62px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#wrapper{
+  position: relative;
+  height: 100%;
+}
+
+#content{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 460px;
+}
+
+#logo{
+  width: 240px;
+  height: 44px;
+  cursor: pointer;
+}
+
+input{
+  font-family: Dotum, '돋움', Helvetica, sans-serif;
+}
+
+input:focus{
+  outline:none;
+}
+
+
+h3{
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 700;/*굵기*/
+}
+.box{
+  display:block;
+  width: 100%;
+  height: 51px;
+  border : solid 1px #dadada;
+  padding: 10px 14px 10px 14px;
+  box-sizing: border-box;
+  background: #fff;
+  /*static: 그대로, relative: static 위치에서, absolute: 바로 위에서*/
+  position: relative;
+}
+.int{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  border: none;
+  background: #fff;
+  font-size: 15px;
+}
+
+#id_box{
+  padding-right: 110px;
+}
+
+#naver{
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  font-size: 15px;
+  color: #8e8e8e;
+}

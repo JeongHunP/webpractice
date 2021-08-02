@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web1 - Javascript</title>
+    <script>
+      var Link = {
+
+      }
+
+      var Body = {
+        setColor: function (color){
+          document.querySelector('body').style.color = color;
+        },
+        setBackgroundColor :function (color){
+          document.querySelector('body').style.backgroundColor = color;
+        }
+      }
+
+      function nightdayHandler(self){
+        if(self.value === 'day'){
+          Body.setColor('white');
+          Body.setBackgroundColor('black');
+          self.value = 'night';
+        }else{
+          Body.setColor('black');
+          Body.setBackgroundColor('white');
+          self.value = 'day';
+        }
+      }
+    </script>
+
+  </head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="day" onclick="
+      nightdayHandler(this);
+    ">
+    <ol>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="java.html">JavaScript</a></li>
+    </ol>
+
+  <h1>HTML</h1>
+
+  <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">
+  Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+  </p><p style="margin-top:45px">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+  </body>
+</html>
