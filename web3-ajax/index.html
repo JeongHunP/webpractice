@@ -27,6 +27,12 @@
           })
         });
       }
+      if(location.hash){
+        fetchpage(location.hash.subtr(2));
+      }else{
+        fetchpage('welcome');
+      }
+
       fetch('list').then(function(response){
         response.text().then(function(text){
           var items = text.split(',');
