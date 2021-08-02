@@ -27,13 +27,13 @@
           })
         });
       }
-      fetch('list').then(function(response){
+      fetch("https://github.com/JeongHunP/webpractice/blob/master/web3-ajax/list").then(function(response){
         response.text().then(function(text){
           var items = text.split(',');
           var i = 0;
           var tags = '';
           while(i<items.length){
-            items.trim();
+            items.trim;
             var item = items[i];
             var tag = '<li><a href="#!'+item+'" onclick="fetchpage(\''+item+'\');">'+item+'</a></li>';
             tags = tags + tag;
