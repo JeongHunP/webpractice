@@ -27,7 +27,7 @@
           })
         });
       }
-      fetch("https://github.com/JeongHunP/webpractice/blob/master/web3-ajax/list").then(function(response){
+      fetch('list').then(function(response){
         response.text().then(function(text){
           var items = text.split(',');
           var i = 0;
