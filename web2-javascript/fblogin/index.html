@@ -8,13 +8,12 @@
           console.log(response);
           if (response.status === "connected") {
             document.querySelector('#loginbtn').value = "logout";
+            testAPI();
           }
           else{
             document.querySelector('#loginbtn').value = "login";
           }
         };
-      
-
 
       window.fbAsyncInit = function() {
         FB.init({
@@ -24,7 +23,6 @@
           version    : 'v11.0'           // Use this Graph API version for this call.
         });
 
-
         FB.getLoginStatus(checkLoginState);
       };
 
@@ -32,7 +30,7 @@
         console.log('Welcome!  Fetching your information.... ');
         FB.api('/me', function(response) {
           console.log('Successful login for: ' + response.name);
-          document.getElementById('status').innerHTML =
+          document.querySelector('#name').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
         });
       }
@@ -54,5 +52,6 @@
         })
       }
     ">
+    <span id="name"></span>
   </body>
 </html>
